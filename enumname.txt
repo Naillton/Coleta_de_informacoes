@@ -1,0 +1,11 @@
+ns1
+ns2
+intranet
+telnet
+www
+ftp
+smtp
+mail
+A
+AAAA
+MX
