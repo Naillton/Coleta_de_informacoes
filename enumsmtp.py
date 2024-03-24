@@ -8,14 +8,14 @@ for usuario in usuarios:
 	resposta = sock.recv(1024)
 	sock.close()
 	if "252" in resposta:
-		print usuario + "-> Válido!"
+		print (usuario + "-> Válido!")
 	elif "550" in resposta:
-		print usuario + "-> Usuário não encontrado"
+		print (usuario + "-> Usuário não encontrado")
 	elif "503" in resposta:
-		print "Servidor requer autenticação"
+		print ("Servidor requer autenticação")
 		break
 	elif "500" in reposta:
-		print "Comando VRFY não suportado pelo servidor"
+		print ("Comando VRFY não suportado pelo servidor")
 		break
 	else
-		print "Resposta do servidor:" , resposta
+		print ("Resposta do servidor:" , resposta)
